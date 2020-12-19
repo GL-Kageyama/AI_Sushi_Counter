@@ -14,7 +14,7 @@ import keras
 root = tk.Tk()
 root.title("AI Sushi Counter")
 root.geometry("780x580")
-canvas = tk.Canvas(root, width=780, height=580)
+canvas = tk.Canvas(root, width=780, height=580, bg="#ffffff")
 canvas.place(x=0, y=0)
 fontSushi = font.Font(family="Times", size=16)
 fontPrice = font.Font(family="Times", size=48)
