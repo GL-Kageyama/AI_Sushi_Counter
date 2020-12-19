@@ -163,7 +163,7 @@ img15 = ImageTk.PhotoImage(img15)
 canvas.create_image(600, 300, image=img15, anchor=tk.NW)
 
 # Total Price String
-labelPrice = tk.Label(root, text="Total Price  $" + str(totalPrice) + ".00", font=fontPrice)
+labelPrice = tk.Label(root, text="Total Price  $" + str(totalPrice) + ".00", font=fontPrice, background="#ffffff")
 labelPrice.place(x=270, y=500)
 
 root.mainloop()
