@@ -19,8 +19,8 @@ canvas.place(x=0, y=0)
 fontSushi = font.Font(family="Times", size=16)
 fontPrice = font.Font(family="Times", size=48)
 
-imgRow = 64
-imgCol = 64
+imgRow = 60
+imgCol = 60
 imgColor = 3
 inShape = (imgRow, imgCol, imgColor)
 nbClass = 15
