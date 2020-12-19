@@ -1,3 +1,6 @@
+# Copyright 2020 a1kageyama
+# https://github.com/a1kageyama/AI_Sushi_Counter
+
 import numpy as np
 import matplotlib.pyplot as plt
 from PIL import Image, ImageTk
@@ -8,14 +11,14 @@ import CnnModel
 import keras
 
 root = tk.Tk()
-root.geometry("750x600")
-canvas = tk.Canvas(root, width=750, height=600)
+root.geometry("780x580")
+canvas = tk.Canvas(root, width=780, height=580)
 canvas.place(x=0, y=0)
-fontSushi = font.Font(family="Times", size=18)
+fontSushi = font.Font(family="Times", size=16)
 fontPrice = font.Font(family="Times", size=48)
 
-imgRow = 60
-imgCol = 60
+imgRow = 64
+imgCol = 64
 imgColor = 3
 inShape = (imgRow, imgCol, imgColor)
 nbClass = 15
@@ -101,7 +104,7 @@ img1 = sushiImage(COUNT[0], 40, 130, imgTxt="Bonito")
 img1 = ImageTk.PhotoImage(img1)
 canvas.create_image(0, 0, image=img1, anchor=tk.NW)
 # California Roll Image
-img2 = sushiImage(COUNT[1], 150, 130, imgTxt="CaliforniaRoll")
+img2 = sushiImage(COUNT[1], 160, 130, imgTxt="CaliforniaRoll")
 img2 = ImageTk.PhotoImage(img2)
 canvas.create_image(150, 0, image=img2, anchor=tk.NW)
 # Conger Eel Image
@@ -137,7 +140,7 @@ img10 = sushiImage(COUNT[9], 630, 280, imgTxt="Scallop")
 img10 = ImageTk.PhotoImage(img10)
 canvas.create_image(600, 150, image=img10, anchor=tk.NW)
 # Sea Urchin Image
-img11 = sushiImage(COUNT[10], 10, 430, imgTxt="SeaUrchin")
+img11 = sushiImage(COUNT[10], 20, 430, imgTxt="SeaUrchin")
 img11 = ImageTk.PhotoImage(img11)
 canvas.create_image(0, 300, image=img11, anchor=tk.NW)
 # Shrimp Image
@@ -159,6 +162,6 @@ canvas.create_image(600, 300, image=img15, anchor=tk.NW)
 
 # Total Price String
 labelPrice = tk.Label(root, text="Total Price  $" + str(totalPrice) + ".00", font=fontPrice)
-labelPrice.place(x=320, y=500)
+labelPrice.place(x=270, y=500)
 
 root.mainloop()
