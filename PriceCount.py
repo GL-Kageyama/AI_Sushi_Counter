@@ -79,7 +79,7 @@ def outputPredict(path):
 def sushiImage(count, xTxt, yTxt, imgTxt):
 
     # Character Output
-    label = tk.Label(root, text= imgTxt + " × " + str(count), font=fontSushi)
+    label = tk.Label(root, text= imgTxt + " × " + str(count), font=fontSushi, background="#ffffff")
     label.place(x=xTxt, y=yTxt)
 
     # Sushi Icon Retrieval
@@ -106,7 +106,7 @@ img1 = sushiImage(COUNT[0], 40, 130, imgTxt="Bonito")
 img1 = ImageTk.PhotoImage(img1)
 canvas.create_image(0, 0, image=img1, anchor=tk.NW)
 # California Roll Image
-img2 = sushiImage(COUNT[1], 160, 130, imgTxt="CaliforniaRoll")
+img2 = sushiImage(COUNT[1], 150, 130, imgTxt="CaliforniaRoll")
 img2 = ImageTk.PhotoImage(img2)
 canvas.create_image(150, 0, image=img2, anchor=tk.NW)
 # Conger Eel Image
