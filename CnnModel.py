@@ -1,3 +1,7 @@
+# Copyright (c) 2020 a1kageyama
+# Released under the MIT license
+# https://github.com/a1kageyama/AI_Sushi_Counter
+
 import keras
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten, BatchNormalization

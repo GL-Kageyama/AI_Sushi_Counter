@@ -1,4 +1,5 @@
-# Copyright 2020 a1kageyama
+# Copyright (c) 2020 a1kageyama
+# Released under the MIT license
 # https://github.com/a1kageyama/AI_Sushi_Counter
 
 import numpy as np
@@ -11,6 +12,7 @@ import CnnModel
 import keras
 
 root = tk.Tk()
+root.title("AI Sushi Counter")
 root.geometry("780x580")
 canvas = tk.Canvas(root, width=780, height=580)
 canvas.place(x=0, y=0)
