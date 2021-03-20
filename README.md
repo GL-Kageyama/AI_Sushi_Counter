@@ -4,7 +4,7 @@
 ### Image recognition is performed on a group of sushi images, and the total amount is calculated.
 
 ## Library
-TensorFlow  
+TensorFlow 1.x  
 Keras  
 
 ## Data
