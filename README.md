@@ -20,6 +20,9 @@ Keras
 1, Run MakeDLModel.ipynb to generate a trained model.  
 2, Run the Python command PriceCount.py to display the total amount.  
 
+## YouTube
+https://www.youtube.com/watch?v=E_L-dQabxE0
+
 ## Result Sample
 ![gui2](https://user-images.githubusercontent.com/36861752/100530900-0e576580-323b-11eb-8f25-040850a7085e.png)
 
